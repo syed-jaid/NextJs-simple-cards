@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
-import { Flex } from '@chakra-ui/react'
+import { Box, Flex } from '@chakra-ui/react'
 import SingleCard from "../Cards/singleCard"
+
 
 export default function Home() {
 
@@ -13,12 +14,12 @@ export default function Home() {
   }, [])
 
   return (
-    <>
-      <Flex wrap='wrap' gap='10px' bg='#061321' h='100vh'>
+    <Box bg='#0c1421' minH={'1000px'}>
+      <Flex wrap='wrap' gap='10px' maxW='1050px' mx={'auto'}>
         {
           products.map(singleProduct => <SingleCard singleProduct={singleProduct}></SingleCard>)
         }
       </Flex>
-    </>
+    </Box>
   )
 }

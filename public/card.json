@@ -1,17 +1,17 @@
 [
     {
         "type": "auction",
-        "img": "",
+        "img": "https://i.ibb.co/B6Qq8J5/boredape1.jpg",
         "id": "#B8/457843",
         "ownerName": "Enoch Citizen",
-        "like": 92,
-        "hightBid": "260",
+        "like": 57,
+        "hightBid": "270",
         "price": "",
         "discount": ""
     },
     {
         "type": "auction",
-        "img": "",
+        "img": "https://i.ibb.co/hfRFjZZ/Yuga-Labs-Bored-Ape-Yacht-Club-4466.jpg",
         "id": "#B8/457843",
         "ownerName": "Enoch Citizen",
         "like": 92,
@@ -21,12 +21,12 @@
     },
     {
         "type": "sale",
-        "img": "",
+        "img": "https://i.ibb.co/0f26QQN/1125.webp",
         "id": "#B8/457843",
         "ownerName": "Enoch Citizen",
-        "like": 92,
+        "like": 34,
         "hightBid": "",
         "price": "300",
-        "discount": "15%"
+        "discount": "15"
     }
 ]
