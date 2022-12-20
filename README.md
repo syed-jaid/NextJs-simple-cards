@@ -1,3 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Simple cards with NextJS and Chker UI
 
-## Getting Started
+Live site link [Nextjs cards](https://nextjs-cards-task.netlify.app) 
+
+* [Next.js](https://nextjs.org/) 
+* [Ckaker UI](https://chakra-ui.com/) 
