@@ -73,10 +73,10 @@ export default function singleCard(props) {
             </CardBody>
             <CardFooter pt='0'>
                 {type === 'auction' ? <Button bg='#0075fe' color='white' borderRadius='none' fontSize='14px' fontWeight='bold' colorScheme='black' w='100%' py='24px'>BID NOW</Button>
-                    : <>
-                        <Button bg='#0075fe' color='white' borderRadius='none' fontSize='14px' fontWeight='bold' colorScheme='black' w='48%' py='24px'>BID NOW</Button>
+                    : <> <Button bg='' border='1px' color='white' borderRadius='none' colorScheme='black' fontSize='14px' fontWeight='bold' w='49%' py='22px'>ADD TO CARD </Button>
                         <Spacer />
-                        <Button bg='' border='1px' color='white' borderRadius='none' colorScheme='black' fontSize='14px' fontWeight='bold' w='49%' py='22px'>ADD TO CARD </Button>
+
+                        <Button bg='#0075fe' color='white' borderRadius='none' fontSize='14px' fontWeight='bold' colorScheme='black' w='48%' py='24px'>BID NOW</Button>
                     </>
                 }
             </CardFooter>
