@@ -1,0 +1,32 @@
+[
+    {
+        "type": "auction",
+        "img": "",
+        "id": "##/457843",
+        "ownerName": "Enoch Citizen",
+        "like": 92,
+        "hightBid": "260",
+        "price": "",
+        "discount": ""
+    },
+    {
+        "type": "auction",
+        "img": "",
+        "id": "##/457843",
+        "ownerName": "Enoch Citizen",
+        "like": 92,
+        "hightBid": "260",
+        "price": "",
+        "discount": ""
+    },
+    {
+        "type": "sale",
+        "img": "",
+        "id": "##/457843",
+        "ownerName": "Enoch Citizen",
+        "like": 92,
+        "hightBid": "",
+        "price": "300",
+        "discount": "15%"
+    }
+]
