@@ -7,7 +7,8 @@
         "like": 57,
         "hightBid": "270",
         "price": "",
-        "discount": ""
+        "discount": "",
+        "offerDate": "Jan 7, 2023 15:30:00"
     },
     {
         "type": "auction",
@@ -17,7 +18,8 @@
         "like": 92,
         "hightBid": "260",
         "price": "",
-        "discount": ""
+        "discount": "",
+        "offerDate": "Jan 9, 2023 12:30:00"
     },
     {
         "type": "sale",
@@ -27,6 +29,7 @@
         "like": 34,
         "hightBid": "",
         "price": "300",
-        "discount": "15"
+        "discount": "15",
+        "offerDate": "Jan 8, 2023 12:30:00"
     }
 ]

@@ -4,11 +4,36 @@ import { BsSuitHeartFill } from 'react-icons/bs';
 
 
 export default function singleCard(props) {
-    const { type, img, id, ownerName, like, hightBid, price, discount } = props?.singleProduct
+    const { type, img, id, ownerName, like, hightBid, price, discount, offerDate } = props?.singleProduct
     let discountprice = (price / 100) * discount
     const [liked, setliked] = useState(false)
+    const [countDown, setCountDown] = useState({})
 
 
+    // Set the date we're counting down to
+    let givenDate = new Date(offerDate).getTime();
+    // Update the count down every 1 second
+    let getTimeCount = setInterval(function () {
+
+        let todaysDate = new Date().getTime();
+
+        let distance = givenDate - todaysDate;
+
+        // Time calculations for days, hours, minutes and seconds
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        let count = { days, hours, minutes, seconds }
+        // Output the result in an element with id="demo"
+        setCountDown(count)
+
+        if (distance < 0) {
+            clearInterval(getTimeCount);
+        }
+    }, 1000);
+    // console.log(countDown)
     return (
         <Card w='305px' mx='auto' mt='10' bg='#0b2237' h='545px'>
             <CardHeader pb='14px'>
@@ -51,9 +76,9 @@ export default function singleCard(props) {
                         <Text color='white' fontWeight='semibold'>${hightBid}</Text>
                     </Box>
                     <Spacer />
-                    <Box border='1px' borderColor='#6d451c' p='6px' w='56%'>
+                    <Box border='1px' borderColor='#6d451c' p='6px' w='57%'>
                         <Text color='#698eb1' fontWeight='bold' fontSize='14px'>AUCTION ENDS IN</Text>
-                        <Text color='white' fontWeight='semibold'>03 : 34 : 24 : 42S</Text>
+                        <Text color='white' fontWeight='semibold' fontSize='15px'>{countDown.days}d : {countDown.hours}h : {countDown.minutes}m : {countDown.seconds}S</Text>
                     </Box>
                 </Flex> :
                     <Flex mt='5'>
@@ -67,7 +92,7 @@ export default function singleCard(props) {
                         <Spacer />
                         <Box border='1px' borderColor='#6d451c' p='6px'>
                             <Text color='#698eb1' fontWeight='bold' fontSize='14px'>FLASH DEAL ENDS IN</Text>
-                            <Text color='white' fontWeight='semibold' fontSize='18px'>03 : 34 : 24 : 42S</Text>
+                            <Text color='white' fontWeight='semibold' fontSize='16px'>{countDown.days}d : {countDown.hours}h : {countDown.minutes}m : {countDown.seconds}S</Text>
                         </Box>
                     </Flex>}
             </CardBody>
